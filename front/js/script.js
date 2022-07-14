@@ -1,6 +1,6 @@
-fetch("http://localhost:3000/api/products/")
+fetch("http://localhost:3000/api/products/") //envoyer une requête HTTP de type GET au service web se trouvant à l'adresse  //
     .then((res) => res.json())
-    .then((products) => addProducts(products))
+    .then((products) => addProducts(products)) //récuperer le résultat de la requête et les passer à la fonction addProducts//
     
     
 function addProducts(canapes) {
@@ -32,12 +32,10 @@ function makeAnchor(id) {
         
 
 function appendChildren(anchor, article) {
-    const items = document.querySelector("#items")
-        if (items != null) {
-            items.appendChild(anchor)
-            anchor.appendChild(article)
-        }
+        items.appendChild(anchor)
+        anchor.appendChild(article)
     }
+    
          
     function makeImage(imageUrl, altTxt) {
         const image = document.createElement("img")

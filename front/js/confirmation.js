@@ -1,19 +1,19 @@
-const orderId = getOrderId()
-displayOrderId(orderId)
-removeAllCache()
+const idOrder = putIdOrder()
+showIdOrder(idOrder)
+eraseCache()
 
-function getOrderId() {
+function putIdOrder() {
   const queryString = window.location.search
   const urlParams = new URLSearchParams(queryString)
   return urlParams.get("orderId")
 }
 
-function displayOrderId(orderId) {
+function showIdOrder(idOrder) {
   const orderIdElement = document.getElementById("orderId")
-  orderIdElement.textContent = orderId
+  orderIdElement.textContent = idOrder
 }
 
-function removeAllCache() {
+function eraseCache() {
   const cache = window.localStorage
   cache.clear()
 }

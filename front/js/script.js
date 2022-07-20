@@ -3,8 +3,8 @@ fetch("http://localhost:3000/api/products/") //envoyer une requête HTTP de type
     .then((products) => addProducts(products)) //récuperer le résultat de la requête et les passer à la fonction addProducts//
     
     
-function addProducts(canapes) {
-    canapes.forEach((kanap) => {
+function addProducts(sofa) {
+    sofa.forEach((kanap) => {
         console.log("kanap: " ,kanap)
         const {_id,imageUrl,altTxt,name, description} = kanap
 

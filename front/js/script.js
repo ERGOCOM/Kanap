@@ -1,6 +1,6 @@
-fetch("http://localhost:3000/api/products/") //envoyer une requête HTTP de type GET au service web se trouvant à l'adresse  //
+fetch("http://localhost:3000/api/products/") 
     .then((res) => res.json())
-    .then((products) => addProducts(products)) //récuperer le résultat de la requête et les passer à la fonction addProducts//
+    .then((products) => addProducts(products)) 
     
     
 function addProducts(sofa) {
